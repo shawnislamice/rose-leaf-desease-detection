@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rose Leaf Disease Detection</title>
+    <link
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link
+      href="{{ url_for('static', filename='css/test.css') }}"
+      rel="stylesheet"
+    />
+    <script
+      src="{{ url_for('static', filename='js/newjs.js') }}"
+      type="text/javascript"
+    ></script>
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+    <style>
+      button {
+        padding: 15px;
+        cursor: pointer;
+        background-color: #ff4240;
+        border-radius: 10px;
+        border: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Rose Leaf Disease Detection Model</a>
+      </div>
+      <div>
+        <button><a href="{{ url_for('developers') }}" target="_blank">Developers</a></button>
+      </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+  </body>
+
+  <div class="foot">
+    <b>Capstone Project Beta Version-2023</b><br />
+    <b
+      >Developed By
+      <a href="https://www.facebook.com/profile.php?id=61551072306258"
+        >Shawon Islam</a
+      ></b
+    >
+    <br />
+    <b> © Copyright Reserved By Daffodil International University</b>
+  </div>
+</html>
